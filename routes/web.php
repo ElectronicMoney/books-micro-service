@@ -11,8 +11,8 @@
 |
 */
 
-$router->get('/books', 'AuthorController@index');
-$router->post('/books', 'AuthorController@store');
+$router->get('/books', 'BookController@index');
+$router->post('/books', 'BookController@store');
 $router->get('/books/{book}', 'BookController@show');
 $router->put('/books/{book}', 'BookController@update');
 $router->patch('/books/{book}', 'BookController@update');
