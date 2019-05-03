@@ -21,7 +21,7 @@ class BookController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $books = Book::paginate(10);
+        $books = Book::all();
         return $this->successResponse($books);
     }
     /**

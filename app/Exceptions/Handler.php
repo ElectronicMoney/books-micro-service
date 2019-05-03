@@ -69,7 +69,7 @@ class Handler extends ExceptionHandler
         if (env('APP_DEBUG', false)) {
             return parent::render($request, $exception);
         }
-        //If there is any other errpr, return inernal server error
+        //If there is no any other error, return inernal server error
         return $this->errorResponse('Unexpected Error; try again later!', Response::HTTP_INTERNAL_SERVER_ERROR);
     }
 }
